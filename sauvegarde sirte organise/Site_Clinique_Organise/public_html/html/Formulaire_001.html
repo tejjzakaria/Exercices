@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Formaulaire Inscription</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/Style_Formulaire_001.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/Style_bar_nav.css" rel="stylesheet" type="text/css"/>
+       
+    </head>
+    <body>
+       <!-- début appliquer le code html qui importe la navbar menu -->
+     <object data="navbar.html" type="text/html" name="menutop" width="1630" height="40" align="top" border="0"></object>
+       
+  
+      <!-- Fin appliquer le code html qui importe la navbar menu -->
+         <h1><a href="../index.html">Menu Principal.</a></h1>
+       
+     <div id="formuliare1">
+        <form id ="form1" action="action" method="post" name="form1">
+             
+              <fieldset><legend>Administratif</legend>
+                          <ol>
+                              
+                              <li><label for="name">Nom:</label>
+                                  <input type="text" name="name" id="name" placeholder="Nom & prénom"/>
+                                  
+                              <p>
+                                   <label><input type="radio"   name="civile" id="Mr"/>Mr</label>
+                                   <label><input type="radio"   name="civile" id="Mr"/>Mme</label>
+                                   <label><input type="radio"   name="civile" id="Mr"/>Mlle</label>
+                                  </p>  
+                              </li>
+               
+                             <li><label for="email">E-mail:</label>
+                                  <input type="email" name="email" id="email" placeholder="exemple@gmail.com"/>
+                             </li>
+                             
+                              <li><label for="tel">Téléphone:</label>
+                                  <input type="tel" name="tel" id="tel"/>
+                             </li>
+                             
+                             <li><label for="adresse">Adresse:</label>
+                                  <input type="text" name="adresse" id="adresse"/>
+                             </li>
+                             
+                             <li><label for="cp">Code Postal:</label>
+                                  <input type="number" name="cp" id="cp"/>
+                             </li>
+                             
+                             <li><label for="ville">Ville:</label>
+                                  <input type="text" name="ville" id="ville"/>
+                             </li>
+                             </ol>     
+              </fieldset>
+            
+             <fieldset><legend>Inscription aux news letter</legend>
+                       <ol>
+                           
+                             
+                                  <li>
+                                        <p>
+                                   <label><input type="checkbox"  name="news1" id="corpo"/>News Corpo</label>
+                                   <label><input type="checkbox"  name="news2" id="pub"/>News public</label>
+                                   <label><input type="checkbox"   name="news3" id="finance"/>News finance</label>
+                                        </p>
+                                  </li>
+                          
+                                  <li>
+                                      <label for="identifiant">Identifiant:</label>
+                                      <input type="text" id="identifiant" name="identifiant" placeholder="Votre  nom Identifiant" />
+                                  </li>  
+                                  
+                                  <li>
+                                      <label for="num">Num Pwd:</label>
+                                      <input type="number" id="num" name="num"/>
+                                  </li> 
+                                  
+                               </ol>   
+             </fieldset>
+            
+            
+            
+             <fieldset><legend>Renseignment complémentaire</legend>
+                    <ol> 
+                    
+                          <li>  
+                            <label for="renseignments">Renseignments:</label>
+                            <textarea id="renseignments" name="renseignments" rows="5" required= required ></textarea>
+                          </li>
+                    </ol>
+             </fieldset>
+            
+            <input type="submit" value="Inscrire"/>
+               
+        </form>
+    </div>
+    <h2>La gestion du menu principal sera faite dans la phase du backend avec l'installation du serveur apache</h2>
+            
+             
+    </body>
+</html>

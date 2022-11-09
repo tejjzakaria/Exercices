@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>Conception Site Clinique</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js" type="text/javascript"></script>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="https://kit.fontawesome.com/7e60a3b0f2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>  
+        <!--Insertion de la balise div conteneur-->
+        <div id="conteneur">
+            <header>
+                <div class="animation1">
+                <h1>
+                    Clinique Chirurgical
+                </h1>
+            </div>
+                <!--Création formulaire simple-->
+                <form action="#" method="post">
+
+                    <label for="log">Log In:</label>
+                    <input type="text" id="log" name="log">
+                    <input type="submit" id="btnValider" value="Valider">
+                    <input type="text" value="" onblur="search(this.value);
+                    this.value='recherchez'"
+                    onfocus="this.value=''">
+                    <input class="traiter" type="button" value="Traiter" onclick="etudiant();">
+                    
+                    <input type="button" id="inscription" value="Inscrivez-Vous">
+                </form>
+                <div id="slider">
+                    <img src="fichiers02/clinique1.jpg" id="img">
+                    <div id="btn_left">
+                        <img src="fichiers02/btn_left.gif" class="left" onclick="slider(-1);">
+                    </div>
+                    <div id="btn-right">
+                        <img src="fichiers02/btn_right.gif" class="right" onclick="slider(+1);">
+                    </div>
+                </div> <!-- fin du slider -->
+                <div class="entete-titre">
+                    <h1>Chirurgical clinique</h1>
+                    Congres <strong>international</strong> de <em>sante</em>
+                    <div id="rs">
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter" class="sociaux"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" class="sociaux"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" class="sociaux"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin" class="sociaux"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" class="sociaux"></i></a>
+                    </div>
+                </div>
+
+            </header>                <!--Fin de la balise header-->
+
+            <!--Début de la balise nav concernant le menu-->
+
+            <nav>
+                    <ul>
+                        <li>
+                            <a href="#1" class="cellules">Home</a>
+
+                        </li>
+                        <li>
+                            <a href="#2" class="cellules">Votre peau</a>
+
+                        </li>
+                        <li>
+                            <a href="#3" class="cellules">Les Soins</a>
+
+                        </li>
+                        <li>
+                            <a href="#4" class="cellules">FAQ</a>
+
+                        </li>
+                        <li>
+                            <a href="#5" class="cellules">Glossaire</a>
+
+                        </li>
+                        <li>
+                            <a href="#6" class="cellules cellule_d">Discuter</a>
+
+                        </li>
+                    </ul>
+            </nav> <!--Fin de la valise de navigation-->
+
+            <!--Début de la balise section-->
+                <section>
+                    <article>
+                        <h2>
+                            Peaux sèche
+                        </h2>
+                        <p>
+                            La sécheresse cutanée du visage est un problème fréquent, bien que certaines personnes en soient plus affectées que d'autres. <br>Les principaux types de peau du visage sont la peau normale, la peau sèche, la peau grasse et la peau mixte. <br>Avec l'âge, il faut également prendre en compte les effets du vieillissement cutané sur la peau.
+Les peaux normales sont les peaux qui ne sont ni sèches ni grasses.<br> De nombreux facteurs peuvent entraîner une sécheresse cutanée du visage (voir le paragraphe sur les « causes de la sécheresse cutanée du visage » ci-dessous). <br>
+Les peaux sèches sont les peaux qui ont tendance à se dessécher, à tirailler et à être légèrement rugueuses à certains endroits.
+
+                        </p>
+                        <div class="colonne">
+                            <img src="fichiers02/peau2.jpg" class="image">
+                        </div>
+                            <div class="middle">
+                                <div class="text">Peaux Sèches</div>
+                            </div>
+                        <div class="colonne">
+                            <img src="fichiers02/peau4.jpg" class="image">
+                        </div>
+                            <div class="middle">
+                                <div class="text">Peaux Sensibles</div>
+                            </div>
+                        <div class="colonne">
+                            <img src="fichiers02/peau5.jpg" class="image">
+                        </div>
+                            <div class="middle">
+                                <div class="text">Peaux ride</div>
+                            </div>
+                        
+                        <h2>
+                            Peaux grasses
+                        </h2>
+                        <p>
+                            Les peaux grasses ont moins de risque de se dessécher, sauf en cas de lavages trop fréquents ou de soins inadaptés. 
+<br>Les peaux mixtes ont tendance à être sèches sur certaines zones du visage, en particulier sur les joues, tandis que la zone T est plutôt grasse.
+
+                        </p>
+                    </article>
+                    <!--Début valise aside-->
+            <aside>
+                <h2>Beauté et santé de la peau</h2>
+                <p>
+                    Pour donner un aspect professionnel à votre document, Word offre des conceptions d’en-tête,
+                    de pied de page, de page de garde et de zone de texte qui se complètent mutuellement.
+                    Vous pouvez pas exemple ajouter une page de garde, un en-tête et une barre latérale identiques.
+                    Cliquez sur Insérer et sélectionnez les éléments de votre choix dans les différentes galeries.
+                      
+                </p>
+            </aside>
+            <!--Fin valise aside-->
+
+            <br class="annule">
+                    <!--Début du footer-->
+                    <footer>
+                        <p>
+                            Extrait du site doctissimo:  <a href="http://www.doctissimo.fr/html/form/beauté" class="cellule_lien">http://www.doctissimo.fr/html/form/beauté</a>  
+                                                         <a href="http://www.doctissimo.fr/html/form/beauté " class="cellule_lien2">http://www.doctissimo.fr/html/form/beauté </a> 
+                        </p>
+                        
+                    </footer>
+                    <!--Fin du footer ou pied de la section-->
+                </section>
+            <!--Fin de la balise section-->
+
+            
+            
+            <!--Début valise footer-->
+            <footer id="bas">
+                <p>
+                    démonstration simple est faite par
+                    <a href="#1">tejjzakaria</a>  concepeteur site web
+                </p>
+            </footer>
+            <!--Fin valise footer-->
+
+            
+        </div> <!-- Fin du conteneur -->
+    </body>
+</html>

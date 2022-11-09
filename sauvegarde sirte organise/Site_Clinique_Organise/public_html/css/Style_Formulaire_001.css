@@ -1,0 +1,163 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 26 oct. 2022, 16:48:15
+    Author     : hp
+*/
+/* mettre le body les  et ol li p et le fieldset */
+body,ol,li,p,fieldset{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff;
+    margin-top: 10px;
+
+}
+ol li{
+    list-style-type: none;
+}
+/* avoir le reflexe d'annuler les trames non visible dans la page'
+ cette classe et non déclarée dans notre formulaire c'est une classe css pare défaut
+*/
+
+
+
+/* Début régle formulaire */
+#form1{
+    background-color: #336699;
+    width: 430px;
+    margin: 0 auto;
+    padding: 60px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+   
+    /* comme nous somme au début de notre formulaire au niveau du
+    premier élémént nous allons Définir une variable de remise à zero 
+   du compteur 
+    c'est une initialisation des numéros de legende'
+    */
+    counter-reset: num;
+    /*la compatibilité pour les autre navigateur */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    /*la valeur générique du raduis*/
+    border-radius: 10px;
+    /* r&aliser l'ombre porté '*/
+    /* o,bre de déclage horizontale est verticale 10px 10px et
+    une zone de flou de 10px avec une ombre porté noir ayant une valeur alpha de 0.6*/
+     -moz-box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+     -webkit-box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+     -o-box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+     box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+}
+
+/*Modifier la proprèté pour fieldset*/
+fieldset{
+    border
+    
+    : 0;
+    margin-bottom: 20px;
+    
+}
+
+/* comme nous souhaitons attribuer  des numéros nous allons les places 
+avant cette legendes  avec before 
+
+n'oublier de faire un décalage entre le compteur num et
+la zone de texte  entre guillemet " "'*/
+fieldset legend:before{
+    
+    content: counter(num) ". ";
+   /*incréméntation du compteur*/
+   counter-increment: num;
+}
+
+fieldset legend{
+    font-size: 20px;
+    font-weight:900;
+    color: #FFF;
+    margin-bottom: 5px;
+   
+}
+
+/* les balise li doivent etre d'une couleur blue clair et bord arrondie '*/
+
+fieldset ol li{
+    border: solid 1px white;
+     /*la compatibilité pour les autre navigateur */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    /*la valeur générique du raduis*/
+    border-radius: 10px;
+     /* attribuer une couleur semi transparente
+     rgba couleur blanche  très clair 255 255 255 avec une opacité de 0.2*/
+     background-color: rgba(255,255,255,0.2);
+     padding: 10px;
+     margin-bottom: 5px;
+     width: 400px;
+ }
+ 
+ /* ajustement des labels  ce selecteur s'adresse à toutes les
+ label qui se trouve dans le formulaire 
+ nous allons nous adresser uniquement aux premiers 
+ label en attribuant le signe supérieur  >  pour ne pas toucher aux labels interne
+ ( enfant) mais au (parent)
+ la notion de dépendance fonctionnelle
+ dominant et dominé : pere/fils
+ 
+ '*/
+ fieldset ol li>label{
+     float: left;
+     width: 110px;
+     text-align: right;
+     padding-right: 20px;
+     margin-top: 5px;
+ }
+
+ /*pour s'adresser uniquement a la balise input de type submit
+nous allons utiliser un selecteur de type [type="submit"]
+ '*/
+ input[type="submit"]
+ {
+     color: #FFF;
+     display: block;
+     width: 150px;
+     margin: 0 auto;
+     padding: 15px;
+     background-color: rgba(255,255,255,0.2);
+     /*les bord arrondis deja attribuer aux navigateur */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    /*la valeur générique du raduis*/
+    border-radius: 10px;
+    font-family: "Times New Roman", Times,serif;
+    font-size: 30px;
+ }
+ 
+ #formuliare1{
+     margin-top: 40px;
+ }
+
+ 
+ h1 {
+     font-size: 20px;
+     /*width: 200px;*/
+     /*border: solid 1px #871F78;*/
+     color: blue;
+     font-family: verdana;
+     /*background-color: black;*/
+     text-align: center;
+     /*float: left;*/
+     /*padding-left: 70px;*/
+     /*margin: 0 auto;*/
+    
+ }
+
+
+

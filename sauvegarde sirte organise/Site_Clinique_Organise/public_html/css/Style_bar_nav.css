@@ -1,0 +1,89 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 31 oct. 2022, 16:15:20
+    Author     : hp
+*/
+/*Début du traitement du menu horizentaled */
+/* le sous menu #hmenu est compris à l'intérieur du menu principale #hmenu*/
+#hmenu,#hmenu ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    float:left;
+}
+/*traitelent de la balise li en ligne de block est la position il est relative*/
+#hmenu li{
+    display: inline-block;
+    position: relative;
+    
+}
+/*la propreèté inhéerit permet au deux balise ul et li d'heriter les meme caracteristque du menu general'*/
+#hmenu ul li{
+    display: inherit;
+    background-color:#2F2F4F;
+}
+/*Traitement de la balise ul avec le z-index:le z-index permet de superposé les sous menu à l'intérieur du menu ^principal
+en ce qui concerne les mesure du z-index en peut aller de 0 jusqu'à 2000 3000 ....SELON 
+LA COMPLIXITE DES SOUS MENU
+'*/
+#hmenu ul{
+    position: absolute;
+    z-index: 1000;
+    max-height: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+/* le hover de ul à l'intérieur de la balise li permet de recadre le menu principale 
+horizentalement en inline-block
+'*/
+#hmenu li:hover ul{
+    max-height: 15em;
+}
+/* Fin traitement des listes non ordonnées*/
+/*Traitement des liens href  a */
+#hmenu a{
+    text-decoration: none;
+    display: block;
+    padding: 8px 32px;
+    font-family: verdana;
+    color:#fff;
+    font-weight: bolder;
+}
+/* traitement des lien ul au niveau de l'ancre '*/
+#hmenu ul a{
+    padding: 8px 0;
+}
+/* mettre la couleur rouge lors de l'hover du li et laisser le text hériter les proprièté du ul 
+principale
+'*/
+#hmenu li:hover li a{
+    color: #fff;
+    text-transform: inherit;
+}
+
+/*au niveau de la derniere instruction on applique une couleure noir au niveau du menu
+principale est des sous menu
+*/
+#hmenu li:hover a,#hmenu  li li:hover a{
+    color: #000;
+}
+
+/*Modification du menu general*/
+#hmenu{
+    margin-bottom: 20px;
+    text-align: center;
+    width: 1200px;
+    background-color: #2F2F4F;
+    
+}
+
+#navbar1{
+    margin-bottom: 20px;
+}
+
+
+

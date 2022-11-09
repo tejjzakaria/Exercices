@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire inscription</title>
+    <link href="../css/Style_Formulaire_001.css" rel="stylesheet" type="text/css">
+    <link href="../css/Style_Navbar.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="navbar1">
+    <nav>
+            <!-- à l'int"rieur de la balise nav on integere la balise ul et li qui construise notre menu -->
+            <ul id="hmenu">
+                <li><a href="#1">Home</a>
+                    <ul>
+                        <li><a href="html/Formulaire_001.html">Formulaire d'inscription</a></li>
+                        <li><a href="#2">Page n° 2</a></li>
+                        <li><a href="#3">Page n° 3</a></li>
+                        <li><a href="#4">Page n° 4</a></li>
+                        <li><a href="#5">Page n° 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#2">Votre peau</a>
+                    <ul>
+                        <li><a href="#1">Page n° 1</a></li>
+                        <li><a href="#2">Page n° 2</a></li>
+                        <li><a href="#3">Page n° 3</a></li>
+                        <li><a href="#4">Page n° 4</a></li>
+                        <li><a href="#5">Page n° 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#3">Les soins</a>
+                    <ul>
+                        <li><a href="#1">Page n° 1</a></li>
+                        <li><a href="#2">Page n° 2</a></li>
+                        <li><a href="#3">Page n° 3</a></li>
+                        <li><a href="#4">Page n° 4</a></li>
+                        <li><a href="#5">Page n° 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#4">FAQ</a>
+                    <ul>
+                        <li><a href="#1">Page n° 1</a></li>
+                        <li><a href="#2">Page n° 2</a></li>
+                        <li><a href="#3">Page n° 3</a></li>
+                        <li><a href="#4">Page n° 4</a></li>
+                        <li><a href="#5">Page n° 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#5">Glossaire</a>
+                    <ul>
+                        <li><a href="#1">Page n° 1</a></li>
+                        <li><a href="#2">Page n° 2</a></li>
+                        <li><a href="#3">Page n° 3</a></li>
+                        <li><a href="#4">Page n° 4</a></li>
+                        <li><a href="#5">Page n° 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#6">Discuter</a>
+                    <ul>
+                        <li><a href="#1">Page n° 1</a></li>
+                        <li><a href="#2">Page n° 2</a></li>
+                        <li><a href="#3">Page n° 3</a></li>
+                        <li><a href="#4">Page n° 4</a></li>
+                        <li><a href="#5">Page n° 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#6">Utilitaires</a>
+                    <ul>
+                        <li><a href="#1">Page n° 1</a></li>
+                        <li><a href="#2">Page n° 2</a></li>
+                        <li><a href="#3">Page n° 3</a></li>
+                        <li><a href="#4">Page n° 4</a></li>
+                        <li><a href="#5">Page n° 5</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- fin de la balise ul portant id="hmenu"-->
+        </nav><!-- Fin balise de naviguation <> -->
+    <!-- debut du formulaire -->
+    </div>
+    <form id ="form1" action="action" method="post" name="form1">
+             
+        <fieldset><legend>Administratif</legend>
+                    <ol>
+                        
+                        <li><label for="name">Nom:</label>
+                            <input type="text" name="name" id="name" placeholder="Nom & prénom"/>
+                            
+                        <p>
+                             <label><input type="radio"   name="civile" id="Mr"/>Mr</label>
+                             <label><input type="radio"   name="civile" id="Mr"/>Mme</label>
+                             <label><input type="radio"   name="civile" id="Mr"/>Mlle</label>
+                            </p>  
+                        </li>
+         
+                       <li><label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="exemple@gmail.com"/>
+                       </li>
+                       
+                        <li><label for="tel">Téléphone:</label>
+                            <input type="tel" name="tel" id="tel"/>
+                       </li>
+                       
+                       <li><label for="adresse">Adresse:</label>
+                            <input type="text" name="adresse" id="adresse"/>
+                       </li>
+                       
+                       <li><label for="cp">Code Postal:</label>
+                            <input type="number" name="cp" id="cp"/>
+                       </li>
+                       
+                       <li><label for="ville">Ville:</label>
+                            <input type="text" name="ville" id="ville"/>
+                       </li>
+                       </ol>     
+        </fieldset>
+      
+       <fieldset><legend>Inscription aux news letter</legend>
+                 <ol>
+                     
+                       
+                            <li>
+                                  <p>
+                             <label><input type="checkbox"  name="news1" id="corpo"/>News Corpo</label>
+                             <label><input type="checkbox"  name="news2" id="pub"/>News public</label>
+                             <label><input type="checkbox"   name="news3" id="finance"/>News finance</label>
+                                  </p>
+                            </li>
+                    
+                            <li>
+                                <label for="identifiant">Identifiant:</label>
+                                <input type="text" id="identifiant" name="identifiant" placeholder="Votre  nom Identifiant" />
+                            </li>  
+                            
+                            <li>
+                                <label for="num">Num Pwd:</label>
+                                <input type="number" id="num" name="num"/>
+                            </li> 
+                            
+                         </ol>   
+       </fieldset>
+      
+      
+      
+       <fieldset><legend>Renseignment complémentaire</legend>
+              <ol> 
+              
+                    <li>  
+                      <label for="renseignments">Renseignments:</label>
+                      <textarea id="renseignments" name="renseignments" rows="5" required= required ></textarea>
+                    </li>
+              </ol>
+       </fieldset>
+      
+      <input type="submit" value="Inscrire"/>
+         
+  </form>
+    
+</body>
+</html>

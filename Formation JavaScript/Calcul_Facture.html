@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Facture</title>
+    <link href="style_facture.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Pour Calculer La Facture <br>Veuillez Entrez Les Valeurs Necessaires</h1>
+    <div class="form">
+        
+        <label>Quantité<input type="number" id="Qte" placeholder="Veuillez saisir la quantite :" required></label>
+        <label>Prix Unitaire<input type="number" id="PU" placeholder="Veuillez saisir le prix unitaire :" required></label>
+        
+        <input type="button" id="btn" value="Calculer la facture" onclick="calcul()">
+    </div>
+    <div class="results">
+        <h1 id="Label">La facture apparaîtra ici <br> après la saisie des données</h1>
+        <h3 id="Qte"></h3>
+        <h3 id="PU"></h3>
+        <h3 id="HT"></h3>
+        <h3 id="TxTVA"></h3>
+        <h3 id="TVA"></h3>
+        <h3 id="Remise"></h3>
+        <h3 id="TTC"></h3>
+    </div>
+    <script>
+        
+        function calcul(){
+            var HT,TVA,Remise,TTC;
+            var Qte,PU,TxTVA;
+
+            Qte = parseFloat(document.getElementById("Qte").value);
+            PU = parseFloat(document.getElementById("PU").value);
+
+            HT = Qte*PU;
+
+            TxTVA = 0.2;
+
+            TVA = HT*0.2;
+
+            Remise = HT*0.05;
+
+            TTC = (HT+TVA)-Remise;
+
+            console.log("HT = "+HT);
+            console.log("TxTVA = "+TxTVA);
+            console.log("TVA = "+TVA);
+            console.log("Remise = "+Remise);
+            console.log("TTC = "+TTC);
+            
+            document.getElementById("Label").innerHTML = "Voici votre facture";
+            document.getElementById("HT").innerHTML = "HT = "+HT;
+            document.getElementById("TxTVA").innerHTML = "TxTVA = "+TxTVA;
+            document.getElementById("TVA").innerHTML = "TVA = "+TVA;
+            document.getElementById("Remise").innerHTML = "Remise = "+Remise;
+            document.getElementById("TTC").innerHTML = "TTC = "+TTC;
+
+            /*
+            document.writeln("<h1 style='font-family: Poppins; text-align: center; margin-top: 10%; color: #E97777;'>Facture</h1>");
+            document.writeln("<h3 style='font-family: Poppins; text-align: center; background-color: #E97777; padding: 10px; color: white; width: 300px; display: table; margin: auto; margin-bottom: 10px; border-radius: 5px;'>HT = "+HT+'</h3>');
+            document.writeln("<h3 style='font-family: Poppins; text-align: center; background-color: #E97777; padding: 10px; color: white; width: 300px; display: table; margin: auto; margin-bottom: 10px; border-radius: 5px;'>TxTVA = "+TxTVA+'</h3>');
+            document.writeln("<h3 style='font-family: Poppins; text-align: center; background-color: #E97777; padding: 10px; color: white; width: 300px; display: table; margin: auto; margin-bottom: 10px; border-radius: 5px;'>TVA = "+TVA+'</h3>');
+            document.writeln("<h3 style='font-family: Poppins; text-align: center; background-color: #E97777; padding: 10px; color: white; width: 300px; display: table; margin: auto; margin-bottom: 10px; border-radius: 5px;'>Remise = "+Remise+'</h3>');
+            document.writeln("<h3 style='font-family: Poppins; text-align: center; background-color: #E97777; padding: 10px; color: white; width: 300px; display: table; margin: auto; margin-bottom: 10px; border-radius: 5px;'>TTC = "+TTC+'</h3>'); */
+    }
+
+        
+    </script>
+</body>
+</html>

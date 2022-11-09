@@ -1,0 +1,470 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Oct 13, 2022, 3:15:58 PM
+    Author     : lenovo
+*/
+
+/*Insérer les nouvelles balises html5 de type block*/
+
+/*inserer les nouvelles  balises html5 qui ont la proprièté de type display bloc qui sont spécifique au html5 dans notre fichier de style css3 */
+abbr,article,aside,audio,canvas,datalist,details,figure,dialog,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video {display:block;}
+/*réalisation d'un arrière plan gris pour le body */
+
+/*les régles de style de la balise conteneur*/
+#conteneur{
+    width: 960px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+body{
+    background-color: #ddd;
+    /*ajouter dégradé pour les navigateur safari et chrom  firefox et opéra */
+    background: -webkit-gradient(linear,0% 0%, 0% 100%, from(#dddddd),to(#ffffff));
+    background: -moz-linear-gradient(top, #dddddd 0%, #ffffff 100%);
+    margin: 0;
+    font-family: "Trebuchet MS",Arial, Helvitica, sans-serif;
+    font-size: 14px;
+}
+/* afficher notre dégradé sur l'ensemble de la page */
+body, html{
+    height: 100%;
+    min-height: 100%;
+}
+
+/* placer tous les élémént du menu ul li en float left 
+nav ul li{
+    float: left;
+}
+
+/* spécifier les propriètés de l'élément ul 
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 960px;
+    height: 40px;
+    
+    background-image: url(images/degrade-menu.jpg); /* degrade pour navigateur opéra 
+    background-color: #ddd;
+    /*ajouter dégradé pour les navigateur safari et chrom  firefox et opéra 
+    background: -webkit-gradient(linear,0% 0%, 0% 100%, from(#dddddd),to(#ffffff));
+    background: -moz-linear-gradient(top, #dddddd 0%, #ffffff 100%);
+}
+
+/*les propriétes des classes menu permette d'alignet le texte de définir que cette élément est un bloc de lui donner une taille puis une bordure vers la droite
+.cellules{
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    width: 159px;
+    border-right: solid 1px #999;
+    color: #666;
+    text-decoration: none;
+}
+
+.cellule_d{
+    border: none;
+}
+*/
+/*Début du traitrement du menu horizentaled */
+/* le sous menu #hmenu est compris à l'intérieur du menu principale #hmenu*/
+#hmenu,#hmenu ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    float:left;
+}
+/*traitelent de la balise li en ligne de block est la position il est relative*/
+#hmenu li{
+    display: inline-block;
+    position: relative;
+    
+}
+/*la propreèté inhéerit permet au deux balise ul et li d'heriter les meme caracteristque du menu general'*/
+#hmenu ul li{
+    display: inherit;
+    background-color:#2F2F4F;
+}
+/*Traitement de la balise ul avec le z-index:le z-index permet de superposé les sous menu à l'intérieur du menu ^principal
+en ce qui concerne les mesure du z-index en peut aller de 0 jusqu'à 2000 3000 ....SELON 
+LA COMPLIXITE DES SOUS MENU
+'*/
+#hmenu ul{
+    position: absolute;
+    z-index: 1000;
+    max-height: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+/* le hover de ul à l'intérieur de la balise li permet de recadre le menu principale 
+horizentalement en inline-block
+'*/
+#hmenu li:hover ul{
+    max-height: 15em;
+}
+/* Fin traitement des listes non ordonnées*/
+/*Traitement des liens href  a */
+#hmenu a{
+    text-decoration: none;
+    display: block;
+    padding: 8px 32px;
+    font-family: verdana;
+    color:#fff;
+    font-weight: bolder;
+}
+/* traitement des lien ul au niveau de l'ancre '*/
+#hmenu ul a{
+    padding: 8px 0;
+}
+/* mettre la couleur rouge lors de l'hover du li et laisser le text hériter les proprièté du ul 
+principale
+'*/
+#hmenu li:hover li a{
+    color: #fff;
+    text-transform: inherit;
+}
+
+/*au niveau de la derniere instruction on applique une couleure noir au niveau du menu
+principale est des sous menu
+*/
+#hmenu li:hover a,#hmenu  li li:hover a{
+    color: #000;
+}
+
+/*Modification du menu general*/
+#hmenu{
+    margin-bottom: 20px;
+    text-align: center;
+    width: 960px;
+    background-color: #2F2F4F;
+    
+}
+
+
+
+/*Fin traitement menu horizentale*/
+/*regle de style pour la balise section*/
+section{
+    float: left;
+}
+
+/* propriété de la balise aside */
+aside{
+    float: right;
+    width: 280px;
+    height: 365px;
+    padding: 10px;
+}
+
+/* realisation de la partie article */
+article{
+    width: 600px;
+    height: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* arrière plan sur l'ensembles de la partie gauche et droite '*/
+aside, article, footer, nav ul{
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    
+    -moz-box-shadow:4px 4px 5px #999;
+    -webkit-box-shadow:4px 4px 5px #999;
+    -o-box-shadow:4px 4px 5px #999;
+    box-shadow:4px 4px 5px #999;
+    background: #fff;
+}
+
+nav{
+    margin: 20px 0;
+}
+
+/*annuler l'élément flottant '*/
+.annule{
+    clear: both;
+}
+
+/* element du footer*/
+footer#bas{
+    padding: 2px;
+    margin-top: 20px;
+}
+
+/*la partie slider */
+#slider{
+    margin-top: 10px;
+}
+#img{
+    width: 960px;
+    height: 300px;
+    border-radius: 15px;
+}
+#btn_left{
+    height:550px;
+    width:200px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    border-radius: 15px;
+}
+.left{
+    width: 60px;
+    height: 60px;
+    top: 30%;
+    left: 200px;
+    position: absolute;
+    opacity: 0.3;
+}
+
+#btn_right{
+    height:550px;
+    width:200px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    border-radius: 15px;
+}
+.right{
+    width: 60px;
+    height: 60px;
+    top: 30%;
+    right: -951px;
+    position: absolute;
+    opacity: 0.3;
+
+}
+.left:hover{
+    opacity: 1;
+    
+}
+.right:hover{
+    opacity: 1;
+}
+
+.cellules:hover{
+    color: white;
+    background-color: 	#871F78;
+    font-weight: bold;
+    border: none;
+}
+
+/* applique des prprièté la classe titre entete */
+.titre-entete{
+    text-align: center;
+    background-color: lightblue;
+    position: relative;
+    top: 50%;
+    color:#0000FF;
+    padding: 10px;
+    animation: animer 6s infinite;
+  }
+
+  @keyframes animer{
+      0%{
+          background-color:#FFFF00;
+          font-size:2px;
+          color:#EAEAAE;
+          letter-spacing:1px;
+         word-spacing:1px;
+      }
+      20%{
+         background-color:#5F9F9F;
+          font-size:4px;
+          color:#7FFF00; 
+         letter-spacing:2px;
+         word-spacing:2px;
+      }
+      40%{
+          background-color:#007FFF;
+          font-size:6px;
+          color:#7FFF00;
+         letter-spacing:3px;
+          word-spacing:3px;
+      }
+      60%{
+          background-color:#D9D919;
+          font-size:8px;
+          color:#EAADEA;
+          letter-spacing:4px;
+          word-spacing:4px;
+      }
+      80%{
+          background-color:#7F00FF;
+          font-size:10px;
+          color:#00FF7F; 
+          word-spacing:5px;
+          letter-spacing:5px;
+      }
+      100%{
+          background-color:#D9D919;
+          font-size:12px;
+          color:#D9D919;
+          letter-spacing:6px;
+          word-spacing:16px;
+      }
+  }
+
+  #tg{
+      animation:animate 6s infinite;
+      padding: 5px;
+      width: 400px;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+   @keyframes animate{
+      0%{
+          background-color:#FFFF00;
+          /*font-size:2px;*/
+          color:#EAEAAE;
+         
+      }
+      20%{
+         background-color:#5F9F9F;
+           /*font-size:2px;*/
+          color:#7FFF00; 
+        
+      }
+      40%{
+          background-color:#007FFF;
+           /*font-size:2px;*/
+          color:#7FFF00;
+         
+      }
+      60%{
+          background-color:#D9D919;
+          /*font-size:2px;*/
+          color:#EAADEA;
+        
+      }
+      80%{
+          background-color:#7F00FF;
+        /*font-size:2px;*/
+          color:#00FF7F; 
+          
+      }
+      100%{
+          background-color:#D9D919;
+          /*font-size:2px;*/
+          color:#D9D919;
+          
+      }
+  }
+
+  
+  /*appliquer proprièté pour réseau sociaux*/
+  #rs{
+      text-align: center;
+      position: relative;
+      padding: 5px;
+      line-height: normal;
+  }
+  .sociaux{
+      margin: 5px;
+      width: 30px;
+      height: 30px;
+      position: relative;
+   }
+  /* traitement de l'image'*/
+  .colonne{
+           position: relative;
+           float: left;
+           width: 30%;
+           min-height: 200px;
+           text-align: center;
+           margin: 5px;
+           padding: 5px;
+       }
+       .image{
+           opacity: 1;
+           display: block;
+           width: 95%;
+           height: 100px;
+           transition: 0.5s ease;
+           backface-visibility: hidden;
+       }
+       .middle{
+           transition: 0.5s ease;
+           opacity: 0;
+           position: absolute;
+           top: 30%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+       }
+       .text{
+           position: relative;
+           background:#e6e8ff;
+           color:#D19275;
+           font-size: 16px;
+           padding: 4px 8px;
+           cursor: pointer;
+          }
+          /*dimunier l'oacity de l'image lorsque il yq le hover*/
+          .colonne:hover .image{
+              opacity: 0.2;
+          }
+           /*augmenter l'oacity de l'image lorsque il yq le hover*/
+           .colonne:hover .middle{
+               opacity: 2;
+           }
+           
+           aside{
+               
+               margin-top: 30px;
+           }
+           
+           h3{
+               font-family: andalus;
+               background: #000;
+               font-size: 12px;
+               color: #fff;
+               text-align: center;
+            }
+            
+            /*appliquer le hover visited et active sur le titre H2*/
+            h2 a:hover{
+                color:yellow;
+            }
+            
+            h2 a:visited{
+                color:green;
+            }
+            
+            h2 a:active{
+                color:red;
+            }
+            footer#bas{
+                background:#2F2F4F;
+                text-align:center;
+                clear:left;
+                margin-top:auto;
+                color:#fff;
+            }       
+            
+            #submit{
+                width: 160px;
+                height: 30px;
+                font-family: verdana;
+                font-weight:bolder;
+                text-indent: 10px;
+                /*background-image: url("fichiers 02/valider.png");*/
+            }
+            
+            #img_valid{
+                width:20px;
+                height: 20px;
+                margin-top: 20px;
+            }
+            #log{
+                 width:190px;
+                 height: 20px;
+                 margin-top: 20px;
+            }
+            
+            

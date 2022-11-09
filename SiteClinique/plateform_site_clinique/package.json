@@ -1,0 +1,8 @@
+{
+    "name": "plateform_site_clinique",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "Yassine",
+    "contributors": [],
+    "dependencies": {}
+}
