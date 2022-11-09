@@ -23,6 +23,20 @@ function Print(){
     console.log(cj);
     console.log(nbjt);
     console.log(nbat);
+
+    // affichage des resultats dans une page HTML
+    document.writeln("<body style='background-color: grey;'>");
+    document.writeln("<h1 style='text-align: center;'>Bulletin des salaires"+'</h1>'+'<br></br>');
+    document.writeln('<fieldset>');
+    document.writeln("<h3 style='text-align: center;'>Matricule :"+mat+'</h3>'+'<br></br>');
+    document.writeln("<h3 style='text-align: center;'>Nom & Prenom :"+np+'</h3>'+'<br></br>');
+    document.writeln("<h3 style='text-align: center;'>Adresse :"+adr+'</h3>'+'<br></br>');
+    document.writeln("<h3 style='text-align: center;'>N° CNSS :"+ncnss+'</h3>'+'<br></br>');
+    document.writeln("<h3 style='text-align: center;'>Cout Journalier :"+cj+'</h3>'+'<br></br>');
+    document.writeln("<h3 style='text-align: center;'>Nombre des jours travaillees :"+nbjt+'</h3>'+'<br></br>');
+    document.writeln("<h3 style='text-align: center;'>Numero d'annees travaillees"+nbat+'</h3>'+'<br></br>');
+    document.writeln('</fieldset>');
+    document.writeln("</body>");
     
     /*
     // test de connexion au salaires
