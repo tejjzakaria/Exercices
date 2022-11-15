@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    
+    font-size: 25px;
+    text-align: center;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+header,footer{
+    padding: 25px;
+    
+    opacity: 0.9;
+    text-align: center;
+    color: white;
+}
+
+.img1{
+    margin-top: 10px;
+    width: 90%;
+    height: 400px;
+}
+
+.flex{
+    display: flex;
+}
+aside{
+    width: 25%;
+    height: 500px;
+    background-color: #222222;
+    opacity: 0.9;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.conteneur{
+    width: 75%;
+    height: 500px;
+    
+}
+main{
+    
+    height: 40%;
+    background-color: aqua;
+}
+
+section{
+    
+    height: 20%;
+    background-color: bisque;
+}
+.last{
+    height: 40%;
+}
+
+.ad{
+    width: 75%;
+    
+    background-color: brown;
+}
+
+.img2{
+    width: 25%;
+    
+}
+
+/* Debut partie titre et formulaire */
+
+
+input{
+    width: 30%;
+    height: 50px;
+    border: none;
+    background-color: rgb(212, 212, 212);
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+
+}
+
+#valider{
+    width: 10%;
+    text-align: center;
+    background-color: rgb(9, 87, 44);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+    margin: auto;
+    
+}
+
+#valider:hover{
+    background-color: rgb(3, 48, 23);
+}
+
+h1{
+    margin-bottom: 10px;
+    font-family: Poppins;
+    color: black;
+    
+}
+
+label{
+    font-family: Poppins;
+    color: black;
+}
