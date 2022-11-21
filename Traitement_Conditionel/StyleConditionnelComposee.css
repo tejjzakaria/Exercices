@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+
+}
+input{
+    width: 80px;
+    background-color: #564787;
+    border: none;
+    padding: 10px;
+    color: white;
+    margin: auto;
+}
+select{
+    width: 30px;
+    border: none;
+    background-color: #564787;
+    padding: 10px;
+    color: white;
+    margin: auto;
+
+}
+
+

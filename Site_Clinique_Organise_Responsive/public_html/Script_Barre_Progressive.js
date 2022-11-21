@@ -16,3 +16,4 @@ window.onload = ()=>{
         document.getElementById("barre").style.width=barre +"px";
     })
 } 
+
