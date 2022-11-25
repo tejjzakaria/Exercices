@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conception Menu Android</title>
+    <link rel="stylesheet" href="../CSS/style_android_menu.css">
+    <script src="../JS/script_android_menu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Clinique Chirurgical</div>
+        <div class="android">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="bar_nav">
+            <ul>
+                <li>
+                    <a href="#1" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#2" class="active">Votre Peau</a>
+                </li>
+                <li>
+                    <a href="#3" class="active">Les Soins</a>
+                </li>
+                <li>
+                    <a href="#4" class="active">FAQs</a>
+                </li>
+                <li>
+                    <a href="#5" class="active">Glossaire</a>
+                </li>
+                <li>
+                    <a href="#6" class="active">Discuter</a>
+                </li>
+                
+            </ul>
+        </nav>
+        <script>
+            android=document.querySelector(".android");
+
+            android.onclick=function(){
+            barnav=document.querySelector(".bar_nav");
+            barnav.classList.toggle("active");
+}
+        </script>
+    </header>
+    
+</body>
+</html>
+
