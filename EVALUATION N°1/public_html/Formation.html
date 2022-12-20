@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!--
+    <div class="container">
+        <h1>Inscription</h1>
+        <div class="form">
+            <center><form action="" method="post">
+                <ul>
+                    <li>
+                        <input type="text" id="np" placeholder="Nom et Prenom*">
+                    </li>
+                    <li>
+                        <input type="text" id="CIN" placeholder="CIN*">
+                    </li>
+                    <li>
+                        <input type="email" id="email" placeholder="Adresse E-mail">
+                    </li>
+                    <li>
+                        <label>Niveau :</label>
+                        <input type="radio" id="niveau1">Secondaire
+                        <input type="radio" id="niveau2">Universitaire
+                        <input type="radio" id="niveau2">Autre
+                    </li>
+                    <li>
+                        <label>Modules de formation :</label>
+                        <select name="modules" id="modules">
+                            <option value="Bureautique">Bureautique</option>
+                            <option value="SE et Reseaux info">SE et Reseaux info</option>
+                            <option value="TIC">TIC</option>
+                        </select>
+                    </li>
+                </ul>
+            </form></center>
+        </div>
+    </div>
+    -->
+    
+    <div class="container">
+        <h1>INSCRIPTION</h1>
+        <center>
+        <form name="f" method="post">
+            <div class="input1">
+                <label>Nom et Prenom * :</label>
+                <input type="text" id="input1"><br>
+                <h4 id="error1"></h4>
+
+            </div>
+            <div class="input1">
+                <label>CIN * :</label>
+                <input type="text" id="input2">
+            </div>
+            <div class="input1">
+                <label>Adresse E-mail * :</lab
+                <input type="email" id="input3">
+            </div>
+            <div class="input1">
+                <label>Niveau :</label>
+                <input type="radio" id="choice" checked value="Secondaire">Secondaire
+                <input type="radio" id="choice">Universitaire
+                <input type="radio" id="choice">Autre
+            </div>
+            <div class="select">
+                <label>Modules de formation :</label>
+                <select name="" id="">
+                    <option value="1">Bureautique</option>
+                    <option value="2">SE et Reseaux info</option>
+                    <option value="3">TIC</option>
+
+
+                </select>
+
+                
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Envoyer" onclick="Verif();">
+                <input type="button" value="Retour">
+            </div>
+            
+
+        </form>
+    </center>
+    <h5>(*) Champs Obligatoire</h5>
+    </div>
+    
+</body>
+</html>

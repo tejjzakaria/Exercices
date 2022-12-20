@@ -1,0 +1,34 @@
+body{
+    margin: 100px;
+    background-color: rgb(255, 172, 172);
+}
+h1{
+    text-align: center;
+}
+.input1 label{
+    text-align: right;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+    text-align: right;
+}
+#choice {
+    width: 10px;
+    display: inline-block;
+    text-align: center;
+}
+input{
+    margin: 5px;
+    width: 150px;
+}
+.select{
+    margin: 5px;
+}
+select{
+    width: 150px;
+}
+h5{
+    text-align: center;
+}
