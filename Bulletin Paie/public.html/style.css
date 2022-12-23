@@ -1,0 +1,44 @@
+fieldset{
+    display: inline;
+    width: 100%;
+}
+
+#ess_fieldset{
+    width: 1100px;
+}
+#fieldset1{
+    width: 500px;
+    float: left;
+}
+#fieldset2{
+    width: 500px;
+    float: right;
+}
+#fieldset3{
+    width: 500px;
+    float: right;
+}
+#fieldset4{
+    width: 500px;
+    float: left;
+}
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    
+    /* Form outline */
+    padding: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
