@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correction Evaluation</title>
+    <script src="script correction.js"></script>
+</head>
+<body>
+    <h1>INSCRIPTION</h1>
+    <pre>
+        <form action="sauvegarder.html" method="post" name="f" onsubmit="return verif()" id="form1">
+            <table>
+                <tr>
+                    <td>Nom & Prenom</td>
+                    <td><input type="text" name="nom" size="30"></td>
+                
+                    <td>CIN</td>
+                    <td><input type="text" name="cin" size="10"></td>
+                
+                    <td>Email</td>
+                    <td><input type="text" name="email" size="30"></td>
+
+                </tr>
+            </table>
+            <h2>Niveaux :</h2>
+            <table>
+                <tr>
+                    <td><input type="radio" name="r" id="myRadio">Secondaire</td>
+                    <td><input type="radio" name="r">Universitaire</td>
+                    <td><input type="radio" name="r">Autre</td>
+                </tr>
+            </table>
+            <h2>Modules de formation :</h2>
+            <select name="list" multiple size="3" id="mySelect">
+                <option value="Informatique">Informatique</option>
+                <option value="Comptabilite">Comptabilite</option>
+                <option value="Bureautique">Bureautique</option>
+                <option value="System Reseaux">Systeme Reseaux</option>
+            </select>
+            <h2>Renseignement Divers :</h2>
+            <textarea name="txtchamp" id="txtchamp" cols="70" rows="10"></textarea>
+            <table>
+                <tr>
+                    <td><input type="submit" value="Envoyer" id="cmd1"></td>
+                    <td><input type="reset" value="Annuler" id="cmd2"></td>
+                </tr>
+            </table>
+        </form>
+    </pre>
+</body>
+</html>

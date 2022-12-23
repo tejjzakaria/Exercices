@@ -131,21 +131,230 @@ triangle(10);
 
 */
 
+
+/*
+
 // UTILISATION DE LA BOUCLE FOR ET WHILE POUR TRAITER LES BULLETINS DE NOTES
 
-console.log("Traitement Bulletin de note eleve");
+console.log("Traitement Bulletin de note eleve N°1");
 var n=parseInt(prompt("Entrez le nombre de note eleve :"));
-
+var code=prompt("Entrez le code de l'eleve :");
+var np=prompt("Entrez le nom et prenom de l'eleve :");
+var adr=prompt("Entrez l'adresse de l'eleve :");
+    
 // INITIALISATION DE LA VARIABLE SOMME NOTES
 var somnote=0;
 // DECLARATION DE LA BOUCLE FOR
 for(i=1;i<=n;i++){
-    var code=prompt("Entrez le code de l'eleve :");
-    var np=prompt("Entrez le nom et prenom de l'eleve :");
-    var adr=prompt("Entrez l'adresse de l'eleve :");
     var note=parseFloat(prompt("Entrez la note de l'eleve"));
     // LA TOTALISATION DES NOTES CONCERNANT LE PREMIER ELEVE
     somnote=somnote+note;
 }
 
 // AFFICHAGE DE SOMME DES NOTES
+
+console.log("Le code : ", code);
+console.log("Le nom et prenom : ", np);
+console.log("L'adresse' : ", adr);
+console.log("La somme des notes = ", somnote);
+
+// CALCUL DE L'ELEVE
+var moy=somnote/n;
+
+console.log("La moyenne de l'eleve est :", moy);
+
+// TEST CONDITIONNEL POUR AFFICHER LA MENTION DE L'ELEVE
+
+if(moy<10){
+    console.log("ELEVE NON ADMIS");
+}
+else if(moy>=10 && moy<12){
+    console.log("ELEVE ADMIS AVEC LA MENTION : PASSABLE");
+}
+else if(moy>=12 && moy<14){
+    console.log("ELEVE ADMIS AVEC LA MENTION : ASSEZ BIEN");
+}
+else if(moy>=14 && moy<16){
+    console.log("ELEVE ADMIS AVEC LA MENTION : BIEN");
+}
+else if(moy>=16 && moy<18){
+    console.log("ELEVE ADMIS AVEC LA MENTION : T.BIEN");
+}
+else if(moy>=18 && moy<=20){
+    console.log("ELEVE ADMIS AVEC LA MENTION : EXECELLENT");
+}
+else{
+    console.log("UNE ERREUR EST SERVENUE");
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+/*
+
+console.log("Traitement Bulletin de note eleve N°2");
+var n=parseInt(prompt("Entrez le nombre de note eleve :"));
+var code=prompt("Entrez le code de l'eleve :");
+var np=prompt("Entrez le nom et prenom de l'eleve :");
+var adr=prompt("Entrez l'adresse de l'eleve :");
+var men;
+    
+// INITIALISATION DE LA VARIABLE SOMME NOTES
+var somnote=0;
+// DECLARATION DE LA BOUCLE FOR
+for(i=1;i<=n;i++){
+    var note=parseFloat(prompt("Entrez la note de l'eleve"));
+    // LA TOTALISATION DES NOTES CONCERNANT LE PREMIER ELEVE
+    somnote=somnote+note;
+}
+
+// AFFICHAGE DE SOMME DES NOTES
+
+console.log("Le code : ", code);
+console.log("Le nom et prenom : ", np);
+console.log("L'adresse' : ", adr);
+console.log("La somme des notes = ", somnote);
+
+// CALCUL DE L'ELEVE
+var moy=somnote/n;
+
+console.log("La moyenne de l'eleve est :", moy);
+
+// TEST CONDITIONNEL POUR AFFICHER LA MENTION DE L'ELEVE
+
+if(moy<10){
+    men="ELEVE NON ADMIS";
+}
+else if(moy>=10 && moy<12){
+    men="ELEVE ADMIS AVEC LA MENTION : PASSABLE";
+}
+else if(moy>=12 && moy<14){
+    men="ELEVE ADMIS AVEC LA MENTION : ASSEZ BIEN";
+}
+else if(moy>=14 && moy<16){
+    men="ELEVE ADMIS AVEC LA MENTION : BIEN";
+}
+else if(moy>=16 && moy<18){
+    men="ELEVE ADMIS AVEC LA MENTION : T.BIEN";
+}
+else if(moy>=18 && moy<=20){
+    men="ELEVE ADMIS AVEC LA MENTION : EXECELLENT";
+}
+else{
+    men="UNE ERREUR EST SERVENUE";
+}
+// AFFICHAGE DES BULLETINS
+console.log(code,np,adr,moy,men);
+document.writeln('Code Eleve :'+''+code+'<br>','Nom et Prenom :'+''+np+'<br>','Adresse :'+''+adr+'<br>','Moyenne :'+''+moy+'<br>',"Mention :"+''+men);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+console.log("Traitement Bulletin de note eleve N°2");
+var n=parseInt(prompt("Entrez le nombre de note eleve :"));
+var code=prompt("Entrez le code de l'eleve :");
+var np=prompt("Entrez le nom et prenom de l'eleve :");
+var adr=prompt("Entrez l'adresse de l'eleve :");
+var men;
+    
+// INITIALISATION DE LA VARIABLE SOMME NOTES
+var somnote=0;
+// DECLARATION DE LA BOUCLE WHILE
+i=1;
+while(i<=n){
+    var note=parseFloat(prompt("Entrez la note de l'eleve"));
+    // TEST CONDITIONNEL SUR LA NOTE SAISIE
+    if(note>0 && note<=20){
+        somnote=somnote+note;
+    }
+    else{
+        console.log("NOTE SAISIE HORS INTERVALLE");
+        break;
+    }
+
+    // LA TOTALISATION DES NOTES CONCERNANT LE PREMIER ELEVE
+    
+    i++;
+}
+
+// AFFICHAGE DE SOMME DES NOTES
+console.log("Le code : ", code);
+console.log("Le nom et prenom : ", np);
+console.log("L'adresse' : ", adr);
+if(note>0 && note<=20){
+    console.log("La somme des notes = ", somnote);
+}
+else{
+    console.log("NOTE SAISIE HORS INTERVALLE");
+}
+// CALCUL DE L'ELEVE
+var moy=somnote/n;
+if(note>0 && note<=20){
+    console.log("La moyenne de l'eleve est :", moy);
+}
+else{
+    console.log("NOTE SAISIE HORS INTERVALLE");
+}
+// TEST CONDITIONNEL POUR AFFICHER LA MENTION DE L'ELEVE
+
+if(moy<10){
+    men="ELEVE NON ADMIS";
+}
+else if(moy>=10 && moy<12){
+    men="ELEVE ADMIS AVEC LA MENTION : PASSABLE";
+}
+else if(moy>=12 && moy<14){
+    men="ELEVE ADMIS AVEC LA MENTION : ASSEZ BIEN";
+}
+else if(moy>=14 && moy<16){
+    men="ELEVE ADMIS AVEC LA MENTION : BIEN";
+}
+else if(moy>=16 && moy<18){
+    men="ELEVE ADMIS AVEC LA MENTION : T.BIEN";
+}
+else if(moy>=18 && moy<=20){
+    men="ELEVE ADMIS AVEC LA MENTION : EXECELLENT";
+}
+else{
+    men="UNE ERREUR EST SERVENUE";
+}
+// AFFICHAGE DES BULLETINS
+if(note>0 && note<=20){
+    console.log(code,np,adr,moy,men);
+}
+else{
+    document.writeln("NOTE SAISIE HORS INTERVALLE");
+}
+
+
+if(note>0 && note<=20){
+    document.writeln('Code Eleve :'+''+code+'<br>');
+    document.writeln('Nom et Prenom :'+''+np+'<br>');
+    document.writeln('Adresse :'+''+adr+'<br>');
+    document.writeln('Moyenne :'+''+moy+'<br>');
+    document.writeln('Mention :'+''+men+'<br>');
+    
+    
+}
+else{
+    document.writeln("NOTE SAISIE HORS INTERVALLE");
+}
+
+
