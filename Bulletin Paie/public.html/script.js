@@ -75,6 +75,12 @@ function global(){
 
     if(nb_annee_travaillee==="" || nbjt==="" || cj===""){
         alert("un ou plusieurs des champs obligatoires sont laissés vides");
+        document.getElementById('txanc').value="";
+        document.getElementById('sb').value="";
+        document.getElementById('anc').value="";
+        document.getElementById('s_brut').value="";
+        document.getElementById('cnss').value="";
+        document.getElementById('net').value="";
     }
 }
 

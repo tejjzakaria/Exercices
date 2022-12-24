@@ -133,6 +133,7 @@ input:focus{
     width: 100px;
     border: solid 2px black;
     box-shadow: 5px 5px #f8f4e5, 5px 5px 0px 2px black;
+    margin-bottom: 50px;
 }
 #btn1:hover, #btn2:hover{
     background-color: black;
