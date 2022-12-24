@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulletin Paie</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <center>
-        <h1>Bulletin Paie</h1>
+        
         <form action="" method="post" name="F" id="ess_form">
             <fieldset id="ess_fieldset">
-                <form action="" method="post" name="f1" id="sub_form1">
+                <legend id="title">Bulletin Paie</legend>
+                <form name="f1" id="sub_form1" method="get" action="#">
                     
                     <fieldset id="fieldset1">
                         <legend>Fiche Signalitique</legend>
@@ -66,7 +68,7 @@
                         </ul>
                     </fieldset>
                 </form>
-                <form action="" method="post" name="f2" id="sub_form2">
+                <form name="f2" id="sub_form2" method="get" action="#">
                     <fieldset id="fieldset2">
                         <legend>Variable Paie</legend>
                         <ul>
@@ -78,104 +80,97 @@
                         <ul>
                             <li>
                                 <label>Nombre de jours travaillé :</label>
-                                <input type="number" name="nbjt" id="nbjt">
+                                <input type="number" name="nbjt" id="nbjt" required>
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label>Nombre d'année travaillé :</label>
-                                <input type="number" name="nbat" id="nbat">
+                                <input type="number" name="nbat" id="nbat" required>
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label>Cout journalier :</label>
-                                <input type="number" name="cj" id="cj">
+                                <input type="number" name="cj" id="cj" required>
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label>Prime Imposable :</label>
-                                <input type="number" name="cj" id="cj">
+                                <input type="number" name="pi" id="pi">
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label>Prime Non Imposable :</label>
-                                <input type="number" name="cj" id="cj">
+                                <input type="number" name="pni" id="pni">
                             </li>
                         </ul>
                         
                     </fieldset>
                 </form>
-                <form action="" method="post" name="f3" id="sub_form3">
-                    <fieldset id="fieldset3">
-                        <legend>Taux</legend>
+                
+                <form name="f3" id="sub_form3" method="get" action="#">
+                    <fieldset id="fieldset4">
+                        <legend>Bulletin Paie</legend>
                         <ul>
                             <li>
                                 <label>Taux Ancienneté :</label>
-                                <select name="txanc" id="txanc">
-                                    <option value="0%">0%</option>
-                                    <option value="5%">5%</option>
-                                    <option value="10%">10%</option>
-                                    <option value="15%">15%</option>
-                                    <option value="20%">20%</option>
-                                </select>
+                                <input type="text" name="txanc" id="txanc">
                             </li>
                         </ul>
                         <ul>
                             <li>
-                                <label>Taux CNSS :</label>
-                                <input type="number" name="nbjt" id="nbjt">
+                                <label>Salaire Base :</label>
+                                <input type="number" name="sb" id="sb">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>Ancienneté :</label>
+                                <input type="number" name="anc" id="anc">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>Salaire Brut :</label>
+                                <input type="number" name="s_brut" id="s_brut">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>CNSS Calculée :</label>
+                                <input type="number" name="cnss" id="cnss">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>Net a payer :</label>
+                                <input type="number" name="net" id="net">
+                            </li>
+                        </ul>
+                        
+                    </fieldset>
+                </form>
+                <form name="f3" id="sub_form3" method="get" action="#">
+                    <fieldset id="fieldset3">
+                        <legend>Taux</legend>
+                        
+                        <ul>
+                            <li>
+                                <label>Taux CNSS : 6.29%</label>
+                                
                             </li>
                         </ul>
                         
                         
                     </fieldset>
                 </form>
-                <form action="" method="post" name="f2" id="sub_form2">
-                    <fieldset id="fieldset4">
-                        <legend>Variable Paie</legend>
-                        <ul>
-                            <li>
-                                <label>Date :</label>
-                                <input type="date" name="dt" id="dt">
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <label>Nombre de jours travaillé :</label>
-                                <input type="number" name="nbjt" id="nbjt">
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <label>Nombre d'année travaillé :</label>
-                                <input type="number" name="nbat" id="nbat">
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <label>Cout journalier :</label>
-                                <input type="number" name="cj" id="cj">
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <label>Prime Imposable :</label>
-                                <input type="number" name="cj" id="cj">
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <label>Prime Non Imposable :</label>
-                                <input type="number" name="cj" id="cj">
-                            </li>
-                        </ul>
-                        
-                    </fieldset>
-                </form>
+                
             </fieldset>
+            <input type="submit" name="btn1" id="btn1" value="Calculer" onclick="global()">
+            <input type="button" name="btn2" id="btn2" value="Initialiser" onclick="clearInput()">
         </form>
     </center>
 </body>

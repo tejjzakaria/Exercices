@@ -1,27 +1,91 @@
+body{
+    background-color: #ffef73;
+    font-family: Cuprum;
+}
+
 fieldset{
     display: inline;
     width: 100%;
+    
+}
+
+#title{
+    display: table;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-weight: 800;
 }
 
 #ess_fieldset{
-    width: 1100px;
+    width: 1150px;
+    padding: 50px;
+    border: solid 3px black;
+    border-radius: 15px;
+    height: 1000px;
 }
 #fieldset1{
     width: 500px;
     float: left;
+    margin-top: 10px;
+    background-color: #f8f4e5;
+    border: solid 3px black;
+    box-shadow: 15px 15px #ffa580, 15px 15px 0px 3px black;
+    transition: 0.2s ease;
 }
 #fieldset2{
     width: 500px;
     float: right;
+    margin: 0 auto;
+    background-color: #f8f4e5;
+    border: solid 3px black;
+    box-shadow: 15px 15px #ffa580, 15px 15px 0px 3px black;
+    transition: 0.2s ease;
 }
 #fieldset3{
     width: 500px;
-    float: right;
+    float: left;
+    margin-left: -13px;
+    margin-top: 40px;
+    background-color: #f8f4e5;
+    border: solid 3px black;
+    box-shadow: 15px 15px #ffa580, 15px 15px 0px 3px black;
+    transition: 0.2s ease;
+    
 }
 #fieldset4{
     width: 500px;
-    float: left;
+    float: right;
+    margin-top: 40px;
+    background-color: #f8f4e5;
+    border: solid 3px black;
+    box-shadow: 15px 15px #ffa580, 15px 15px 0px 3px black;
+    transition: 0.2s ease;
 }
+#fieldset5{
+    width: 1000px;
+    margin-top: 40px;
+    border: solid 3px black;
+    height: 100px;
+}
+
+#fieldset1:hover, #fieldset2:hover, #fieldset3:hover, #fieldset4:hover{
+    box-shadow: 20px 20px #ffa580, 20px 20px 0px 3px black;
+}
+h3{
+    text-align: center;
+}
+legend{
+    padding: 10px;
+    background-color: #ffef73;
+    border-radius: 5px;
+    border: solid 3px black;
+    font-weight: 600;
+}
+
 form {
     /* Center the form on the page */
     margin: 0 auto;
@@ -34,11 +98,45 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%;
+    
 }
 
 label {
     /* Uniform size & alignment */
     display: inline-block;
-    width: 150px;
+    width: 200px;
     text-align: right;
 }
+input{
+    margin: 10px;
+    height: 30px;
+    border: none;
+    background-color: #f8f4e5;
+    border-bottom: solid 2px black;
+    font-family: Cuprum;
+}
+input:focus{
+    outline: none;
+    border-bottom: solid 2px #ffa580;
+}
+#btn1, #btn2{
+    background-color: #ffa580;
+    border: none;
+    padding: 10px;
+    font-family: Cuprum;
+    color: black;
+    font-size: 20px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    border: solid 2px black;
+    box-shadow: 5px 5px #f8f4e5, 5px 5px 0px 2px black;
+}
+#btn1:hover, #btn2:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px #f8f4e5, 8px 8px 0px 2px black;
+}
+
