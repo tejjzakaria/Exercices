@@ -5,6 +5,7 @@
 function global(){
 
     // Calcul salaire de base
+
     var salaire_base;
     var nbjt=document.getElementById('nbjt').value;
     var cj=document.getElementById('cj').value;
@@ -118,5 +119,5 @@ function clearInput(){
     document.getElementById('cnss').value="";
     document.getElementById('net').value="";
 
-    return false;
+    
 }
