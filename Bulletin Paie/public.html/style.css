@@ -29,6 +29,7 @@ fieldset{
 }
 #fieldset1{
     width: 500px;
+    height: 500px;
     float: left;
     margin-top: 10px;
     background-color: #f8f4e5;
@@ -38,6 +39,7 @@ fieldset{
 }
 #fieldset2{
     width: 500px;
+    height: 400px;
     float: right;
     margin: 0 auto;
     background-color: #f8f4e5;
@@ -47,8 +49,20 @@ fieldset{
 }
 #fieldset3{
     width: 500px;
+    height: 80px;
     float: left;
     margin-left: -13px;
+    margin-top: 40px;
+    background-color: #f8f4e5;
+    border: solid 3px black;
+    box-shadow: 15px 15px #ffa580, 15px 15px 0px 3px black;
+    transition: 0.2s ease;
+    
+}
+#fieldset6{
+    width: 500px;
+    height: 150px;
+    float: left;
     margin-top: 40px;
     background-color: #f8f4e5;
     border: solid 3px black;
@@ -59,6 +73,7 @@ fieldset{
 #fieldset4{
     width: 500px;
     float: right;
+    height: 400px;
     margin-top: 40px;
     background-color: #f8f4e5;
     border: solid 3px black;
@@ -72,7 +87,7 @@ fieldset{
     height: 100px;
 }
 
-#fieldset1:hover, #fieldset2:hover, #fieldset3:hover, #fieldset4:hover{
+#fieldset1:hover, #fieldset2:hover, #fieldset3:hover, #fieldset4:hover, #fieldset6:hover{
     box-shadow: 20px 20px #ffa580, 20px 20px 0px 3px black;
 }
 h3{
@@ -141,3 +156,8 @@ input:focus{
     box-shadow: 8px 8px #f8f4e5, 8px 8px 0px 2px black;
 }
 
+#fieldset_traitement{
+    margin-left: 10px;
+}
+
+.hide { position:absolute; top:-1px; left:-1px; width:1px; height:1px; }

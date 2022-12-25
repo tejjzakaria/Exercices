@@ -11,10 +11,10 @@
 <body>
     <center>
         
-        <form action="" method="post" name="F" id="ess_form">
+        <form action="" method="post" name="F" id="ess_form" target="hiddenFrame">
             <fieldset id="ess_fieldset">
                 <legend id="title">Bulletin Paie</legend>
-                <form name="f1" id="sub_form1" method="get" action="#">
+                <form name="f1" id="sub_form1" method="post" action="">
                     
                     <fieldset id="fieldset1">
                         <legend>Fiche Signalitique</legend>
@@ -26,7 +26,7 @@
                         </ul>
                         <ul>
                             <li>
-                                <label>Nom & Prenom :</label>
+                                <label>Nom & Prénom :</label>
                                 <input type="text" name="np" id="np">
                             </li>
                         </ul>
@@ -50,7 +50,7 @@
                         </ul>
                         <ul>
                             <li>
-                                <label>Echelle :</label>
+                                <label>Échelle :</label>
                                 <input type="text" name="echelle" id="echelle">
                             </li>
                         </ul>
@@ -62,13 +62,13 @@
                         </ul>
                         <ul>
                             <li>
-                                <label>Departement :</label>
+                                <label>Département :</label>
                                 <input type="text" name="dep" id="dep">
                             </li>
                         </ul>
                     </fieldset>
                 </form>
-                <form name="f2" id="sub_form2" method="get" action="#">
+                <form name="f2" id="sub_form2" method="post" action="">
                     <fieldset id="fieldset2">
                         <legend>Variable Paie</legend>
                         <ul>
@@ -79,19 +79,19 @@
                         </ul>
                         <ul>
                             <li>
-                                <label>Nombre de jours travaillé :</label>
+                                <label>Nombre de jours travaillé * :</label>
                                 <input type="number" name="nbjt" id="nbjt" required>
                             </li>
                         </ul>
                         <ul>
                             <li>
-                                <label>Nombre d'année travaillé :</label>
+                                <label>Nombre d'année travaillé * :</label>
                                 <input type="number" name="nbat" id="nbat" required>
                             </li>
                         </ul>
                         <ul>
                             <li>
-                                <label>Cout journalier :</label>
+                                <label>Cout journalier * :</label>
                                 <input type="number" name="cj" id="cj" required>
                             </li>
                         </ul>
@@ -111,7 +111,7 @@
                     </fieldset>
                 </form>
                 
-                <form name="f3" id="sub_form3" method="get" action="#">
+                <form name="f3" id="sub_form3" method="post" action="">
                     <fieldset id="fieldset4">
                         <legend>Bulletin Paie</legend>
                         <ul>
@@ -146,14 +146,14 @@
                         </ul>
                         <ul>
                             <li>
-                                <label>Net a payer :</label>
+                                <label>Net à payer :</label>
                                 <input type="number" name="net" id="net">
                             </li>
                         </ul>
                         
                     </fieldset>
                 </form>
-                <form name="f3" id="sub_form3" method="get" action="#">
+                <form name="f3" id="sub_form3" method="post" action="">
                     <fieldset id="fieldset3">
                         <legend>Taux</legend>
                         
@@ -167,11 +167,17 @@
                         
                     </fieldset>
                 </form>
+                <fieldset id="fieldset6">
+                    <legend>Traitement</legend>
+                    <input type="submit" name="btn1" id="btn1" value="Calculer" onclick="global()">
+                    <input type="button" name="btn2" id="btn2" value="Initialiser" onclick="clearInput()">
+                </fieldset>
+                
                 
             </fieldset>
-            <input type="submit" name="btn1" id="btn1" value="Calculer" onclick="global()">
-            <input type="button" name="btn2" id="btn2" value="Initialiser" onclick="clearInput()">
+            <h4>Les champs obligatoires sont marqués avec (*)</h4>
         </form>
     </center>
+    <iframe name="hiddenFrame" class="hide"></iframe>
 </body>
 </html>

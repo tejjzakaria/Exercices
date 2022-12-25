@@ -3,6 +3,8 @@
 
 // BUTTON CALCULER
 function global(){
+
+    // Calcul salaire de base
     var salaire_base;
     var nbjt=document.getElementById('nbjt').value;
     var cj=document.getElementById('cj').value;
@@ -11,7 +13,7 @@ function global(){
 
     document.getElementById('sb').value=salaire_base;
     
-
+    // Calucl ancientee
     var anc;
     var nb_annee_travaillee=document.getElementById('nbat').value;
     if(nb_annee_travaillee>=0 && nb_annee_travaillee<=1.99){
@@ -37,6 +39,7 @@ function global(){
 
     document.getElementById('anc').value=anc;
 
+    // Calcul salaire brut
     var salaire_brut;
     var prime_imposable=document.getElementById('pi').value;
 
@@ -48,6 +51,7 @@ function global(){
     
     document.getElementById('s_brut').value=salaire_brut;
 
+    // Calcul CNSS
     var cnss_calculee;
     if(salaire_brut<6000){
         cnss_calculee=salaire_brut*0.0629;
@@ -58,6 +62,7 @@ function global(){
 
     document.getElementById('cnss').value=cnss_calculee;
 
+    // Calcul Net
     var net_a_payer;
     var prime_non_imposable=document.getElementById('pni').value;
 
@@ -71,10 +76,10 @@ function global(){
     document.getElementById('net').value=net_a_payer;
 
 
-    // No required fields go empty validation
+    // Pour les champs qui ne doivent pas être vides
 
     if(nb_annee_travaillee==="" || nbjt==="" || cj===""){
-        alert("un ou plusieurs des champs obligatoires sont laissés vides");
+        alert("Un ou plusieurs des champs obligatoires sont laissés vides");
         document.getElementById('txanc').value="";
         document.getElementById('sb').value="";
         document.getElementById('anc').value="";
@@ -82,6 +87,10 @@ function global(){
         document.getElementById('cnss').value="";
         document.getElementById('net').value="";
     }
+
+    return false;
+
+    
 }
 
 
@@ -108,4 +117,6 @@ function clearInput(){
     document.getElementById('s_brut').value="";
     document.getElementById('cnss').value="";
     document.getElementById('net').value="";
+
+    return false;
 }
