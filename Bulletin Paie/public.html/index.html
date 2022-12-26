@@ -21,49 +21,49 @@
                         <ul>
                             <li>
                                 <label>Matricule :</label>
-                                <input type="text" name="mat" id="mat">
+                                <input type="text" name="mat" id="mat" value="VROFU1MI">
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label>Nom & Prénom :</label>
-                                <input type="text" name="np" id="np">
+                                <input type="text" name="np" id="np" value="John Doe">
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label>Adresse :</label>
-                                <input type="text" name="adr" id="adr">
+                                <input type="text" name="adr" id="adr" value="360 Whiteman Street, Lower Township, NJ, 08204">
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label>N° CNSS :</label>
-                                <input type="text" name="num_cnss" id="num_cnss">
+                                <input type="text" name="num_cnss" id="num_cnss" value="0955467891">
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label>N° C.I.N.R :</label>
-                                <input type="text" name="num_cinr" id="num_cinr">
+                                <input type="text" name="num_cinr" id="num_cinr" value="63-90-10-87">
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label>Échelle :</label>
-                                <input type="text" name="echelle" id="echelle">
+                                <input type="number" name="echelle" id="echelle" value="1">
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label>Service :</label>
-                                <input type="text" name="service" id="service">
+                                <input type="text" name="service" id="service" value="K.M">
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label>Département :</label>
-                                <input type="text" name="dep" id="dep">
+                                <input type="text" name="dep" id="dep" value="DEP 1">
                             </li>
                         </ul>
                     </fieldset>
@@ -80,19 +80,19 @@
                         <ul>
                             <li>
                                 <label>Nombre de jours travaillé * :</label>
-                                <input type="number" name="nbjt" id="nbjt" required>
+                                <input type="number" name="nbjt" id="nbjt">
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label>Nombre d'année travaillé * :</label>
-                                <input type="number" name="nbat" id="nbat" required>
+                                <input type="number" name="nbat" id="nbat">
                             </li>
                         </ul>
                         <ul>
                             <li>
-                                <label>Cout journalier * :</label>
-                                <input type="number" name="cj" id="cj" required>
+                                <label>Cout journalier (Dhs) * :</label>
+                                <input type="number" name="cj" id="cj">
                             </li>
                         </ul>
                         <ul>
@@ -169,13 +169,16 @@
                 </form>
                 <fieldset id="fieldset6">
                     <legend>Traitement</legend>
+                    <h4>Les champs obligatoires sont marqués avec (*)</h4>
+                    <h4>Les résultas seront affichés dans la partie Bulletin Paie</h4>
                     <input type="submit" name="btn1" id="btn1" value="Calculer" onclick="global()">
                     <input type="button" name="btn2" id="btn2" value="Initialiser" onclick="clearInput()">
                 </fieldset>
                 
                 
             </fieldset>
-            <h4>Les champs obligatoires sont marqués avec (*)</h4>
+            
+            <h5>tejjzakaria</h5>
         </form>
     </center>
     <iframe name="hiddenFrame" class="hide"></iframe>

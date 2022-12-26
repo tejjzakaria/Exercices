@@ -87,11 +87,7 @@ function global(){
         document.getElementById('s_brut').value="";
         document.getElementById('cnss').value="";
         document.getElementById('net').value="";
-    }
-
-    return false;
-
-    
+    }    
 }
 
 
@@ -118,6 +114,4 @@ function clearInput(){
     document.getElementById('s_brut').value="";
     document.getElementById('cnss').value="";
     document.getElementById('net').value="";
-
-    
 }
